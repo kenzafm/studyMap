@@ -1,0 +1,178 @@
+body {
+    background-image: linear-gradient(to right, lightblue , lightgreen);
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.video-container {
+    position: relative;
+    width: 100vw;
+    height: 70%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.navbar {
+    position: fixed;
+    word-spacing: 4px;
+    width: 100vw;
+    font-style: italic;
+    background-image: linear-gradient(to left, lightblue , lightgreen);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    z-index: 10; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0;
+    position: -webkit-sticky;
+    background-color: aliceblue;
+    color: coral;
+    padding: 5px;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Flowchart container */
+  .flowchart-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to new line if necessary */
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  /* Styling for each pathway (personality type) */
+  .flowchart-path {
+    position: relative;
+    width: 250px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px; /* Ensures some space below each item when wrapping */
+  }
+  
+  .flowchart-path h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
+  }
+  
+  /* Hover effect */
+  .flowchart-path:hover {
+    background-color: #ddd;
+  }
+  
+  .flowchart-path .content {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  /* Show content on hover */
+  .flowchart-path:hover .content {
+    display: block;
+  }
+  
+  /* Techniques and Tools Styling */
+  .flowchart-path .content h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .flowchart-path .content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .flowchart-path .content ul li {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  /* Different colors for each personality type */
+  .thinker {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .helper {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .creative {
+    background-color: #FF9800;
+    color: white;
+  }
+  
+  .nurturer {
+    background-color: #9C27B0;
+    color: white;
+  }
+  
+  .enthusiast {
+    background-color: #FF5722;
+    color: white;
+  }
+  
+  /* Optional: arrows for pathways */
+  .flowchart-path::after {
+    content: "→";
+    font-size: 24px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #333;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Arrows disappear when not hovered */
+  .flowchart-path:hover::after {
+    opacity: 1;
+  }
