@@ -89,14 +89,13 @@ h2 {
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 30px; /* Ensures some space below each item when wrapping */
+    margin-bottom: 90px; /* Ensures some space below each item when wrapping */
   }
   
   .flowchart-path h3 {
     margin-bottom: 10px;
     font-size: 18px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    margin-bottom: 40px;
 
   }
   
