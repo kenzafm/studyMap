@@ -89,7 +89,7 @@ h2 {
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 30px; /* Ensures some space below each item when wrapping */
+    margin-bottom: 90px; /* Ensures some space below each item when wrapping */
   }
   
   .flowchart-path h3 {
@@ -169,3 +169,11 @@ h2 {
     color: #333;
     transition: opacity 0.3s ease;
   }
+<<<<<<< HEAD
+=======
+  
+  /* Arrows disappear when not hovered */
+  .flowchart-path:hover::after {
+    opacity: 1;
+  }
+>>>>>>> b4f557f9aa40bce529ef9aa0e9f2b6dd34104942
